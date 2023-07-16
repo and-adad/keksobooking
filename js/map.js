@@ -1,39 +1,22 @@
 'use strict';
 
-
-
-
-
 var AuthorPostfix = ['01', '02', '03', '04', '05', '06', '07', '08'];
+var OfferTitle = ["Большая уютная квартира", "Маленькая неуютная квартира", "Огромный прекрасный дворец", "Маленький ужасный дворец", "Красивый гостевой домик", "Некрасивый негостеприимный домик", "Уютное бунгало далеко от моря", "Неуютное бунгало по колено в воде"];
+var TypeRoom = [ 'palace', 'flat', 'house', 'bungalo'];
+var Check = ['12:00', '13:00', '14:00'];
+var Features = ["wifi", "dishwasher", "parking", "washer", "elevator", "conditioner"];
+
 
 var RandomPostfix = AuthorPostfix[(Math.floor(Math.random() * AuthorPostfix.length))];
-
 var RamdomAvatar = 'img/avatars/user' + RandomPostfix + '.png';
-
-/*var author = {
-	'avatar': 'RamdomAvatar'
-};*/
-
-
-var OfferTitle = ["Большая уютная квартира", "Маленькая неуютная квартира", "Огромный прекрасный дворец", "Маленький ужасный дворец", "Красивый гостевой домик", "Некрасивый негостеприимный домик", "Уютное бунгало далеко от моря", "Неуютное бунгало по колено в воде"];
-
 var RandomOfferTitle = OfferTitle[(Math.floor(Math.random() * OfferTitle.length))];
-
 var LocationX = (Math.floor(Math.random() * 600)) + 1;
 var LocationY = (Math.floor(Math.random() * 350)) + 1;
 var RandomAddres = LocationX + ', ' + LocationY;
-
 var RandomPrice = (Math.floor(Math.random() * (1000000-1000))) + 1000;
-
-var TypeRoom = [ 'palace', 'flat', 'house', 'bungalo'];
 var RandomType = TypeRoom[(Math.floor(Math.random() * TypeRoom.length))];
-
 var NumRooms = Math.floor(Math.random() * 5) + 1;
-
-var Check = ['12:00', '13:00', '14:00'];
 var RandomCheck = Check[(Math.floor(Math.random() * Check.length))];
-
-var Features = ["wifi", "dishwasher", "parking", "washer", "elevator", "conditioner"];
 var RandomFeatures = Features[(Math.floor(Math.random() * Features.length))] + ' and ' + Features[(Math.floor(Math.random() * Features.length))];
 
 /*var offer = {
