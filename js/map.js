@@ -7,31 +7,6 @@ var Check = ['12:00', '13:00', '14:00'];
 var Features = ["wifi", "dishwasher", "parking", "washer", "elevator", "conditioner"];
 
 
-
-
-/*var offer = {
-	'title': RandomOfferTitle,
-	'address': RandomAddres,
-	'price': RandomPrice,
-	'type': RandomType,
-	'rooms': NumRooms,
-	'guests': NumRooms*2,
-	'checkin': RandomCheck,
-	'checkout': RandomCheck,
-	'features': RandomFeatures,
-	'description': ' ',
-	'photos': ['https://www.re-port.net/picture_l/report/0000060801_01.jpg', 'http://o0.github.io/assets/images/tokyo/hotel2.jpg', 'https://fashionsnap-assets.com/asset/format=auto,width=1200/article/images/2020/12/hilton_kyoto_20201215-001.jpg']
-
-};*/
-
-/*var location = {
-	'x': 150,
-	'y': 200
-};*/
-
-
-
-
 var SimilarAdsNearby = [];
 
 
