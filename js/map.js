@@ -1,9 +1,5 @@
 'use strict';
-/*var option1 = {
-	'author':
-}
 
-var SimilarAdsNearby = ['', 2, 3, 4, 5, 6, 7, 8];*/
 
 
 
@@ -14,8 +10,79 @@ var RandomPostfix = AuthorPostfix[(Math.floor(Math.random() * AuthorPostfix.leng
 
 var RamdomAvatar = 'img/avatars/user' + RandomPostfix + '.png';
 
-var author = {
+/*var author = {
 	'avatar': 'RamdomAvatar'
+};*/
+
+
+var OfferTitle = ["Большая уютная квартира", "Маленькая неуютная квартира", "Огромный прекрасный дворец", "Маленький ужасный дворец", "Красивый гостевой домик", "Некрасивый негостеприимный домик", "Уютное бунгало далеко от моря", "Неуютное бунгало по колено в воде"];
+
+var RandomOfferTitle = OfferTitle[(Math.floor(Math.random() * OfferTitle.length))];
+
+var LocationX = (Math.floor(Math.random() * 600)) + 1;
+var LocationY = (Math.floor(Math.random() * 350)) + 1;
+var RandomAddres = LocationX + ', ' + LocationY;
+
+var RandomPrice = (Math.floor(Math.random() * (1000000-1000))) + 1000;
+
+var TypeRoom = [ 'palace', 'flat', 'house', 'bungalo'];
+var RandomType = TypeRoom[(Math.floor(Math.random() * TypeRoom.length))];
+
+var NumRooms = Math.floor(Math.random() * 5) + 1;
+
+var Check = ['12:00', '13:00', '14:00'];
+var RandomCheck = Check[(Math.floor(Math.random() * Check.length))];
+
+var Features = ["wifi", "dishwasher", "parking", "washer", "elevator", "conditioner"];
+var RandomFeatures = Features[(Math.floor(Math.random() * Features.length))] + ' and ' + Features[(Math.floor(Math.random() * Features.length))];
+
+/*var offer = {
+	'title': RandomOfferTitle,
+	'address': RandomAddres,
+	'price': RandomPrice,
+	'type': RandomType,
+	'rooms': NumRooms,
+	'guests': NumRooms*2,
+	'checkin': RandomCheck,
+	'checkout': RandomCheck,
+	'features': RandomFeatures,
+	'description': ' ',
+	'photos': ['https://www.re-port.net/picture_l/report/0000060801_01.jpg', 'http://o0.github.io/assets/images/tokyo/hotel2.jpg', 'https://fashionsnap-assets.com/asset/format=auto,width=1200/article/images/2020/12/hilton_kyoto_20201215-001.jpg']
+
+};*/
+
+/*var location = {
+	'x': 150,
+	'y': 200
+};*/
+
+var RandomObject = {
+	'avatar': RamdomAvatar,
+	'title': RandomOfferTitle,
+	'address': RandomAddres,
+	'price': RandomPrice,
+	'type': RandomType,
+	'rooms': NumRooms,
+	'guests': NumRooms*2,
+	'checkin': RandomCheck,
+	'checkout': RandomCheck,
+	'features': RandomFeatures,
+	'description': ' ',
+	'photos': ['https://www.re-port.net/picture_l/report/0000060801_01.jpg', 'http://o0.github.io/assets/images/tokyo/hotel2.jpg', 'https://fashionsnap-assets.com/asset/format=auto,width=1200/article/images/2020/12/hilton_kyoto_20201215-001.jpg'],
+	'x': 150,
+	'y': 200
+
 };
 
-console.log(RamdomAvatar);
+var SimilarAdsNearby = [];
+
+
+for (var i = 0; i < 8; i++) {
+	SimilarAdsNearby[i] = RandomObject;
+};
+
+
+
+
+
+console.log(SimilarAdsNearby);
