@@ -64,5 +64,5 @@ var path = document.querySelector('article');
 console.log(pools);
 
 
-
+document.getElementById("myImage").src="img/avatars/user02.png";
 
