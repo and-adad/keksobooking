@@ -50,6 +50,14 @@ for (var i = 0; i < 8; i++) {
 
 
 
+console.log(RandomObject);
+console.log(RandomObject.avatar);
 
+var pools = document.querySelectorAll('.map__pin');
+var template = document.querySelector('#element-template').content.querySelector('article');
+for (var i = 0; i < 1; i++) {
+	var element = template.cloneNode(true);
+	
+	pools[0].appendChild(element);
+}
 
-console.log(SimilarAdsNearby);
