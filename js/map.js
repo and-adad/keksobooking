@@ -66,3 +66,6 @@ console.log(pools);
 
 document.getElementById("myImage").src="img/avatars/user02.png";
 
+var HAvatar = document.querySelector('h3');
+var newHAvatar = 'Современный офис';
+HAvatar.innerHTML = newHAvatar;
