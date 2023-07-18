@@ -60,4 +60,9 @@ for (var i = 0; i < 1; i++) {
 	
 	pools[0].appendChild(element);
 }
+var path = document.querySelector('article');
+console.log(pools);
+
+
+
 
